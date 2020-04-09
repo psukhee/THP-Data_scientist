@@ -102,3 +102,22 @@ def alphajournalists
 end
 puts alphajournalists
 @journalists.sort_by(&:downcase)
+
+  # a fixer
+
+  #Quels sont les 50 handles les plus courts de ce array ?
+puts "Voici les 50 handles les plus courts de ce array"
+
+def fifty_shortest (journalists)
+    journalists_length = journalists.sort_by(&:length)
+end
+puts fifty_shortest
+  
+  #Quelle est la position dans l'array de la personne @epenser ?
+def epenser_index (journalists)
+    puts "Le handle @epenser si situe à l'index : #{journalists.index("@epenser")}"
+end
+
+
+Tab.min {|a, b| a.length <=> b.length} # Get the object with the smaller length
+Tab.min_by {|obj| obj.length} # Get the minimum of the given block
